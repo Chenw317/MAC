@@ -5,8 +5,9 @@ const ding = document.getElementById("ding-sound");
 
 function chooseFlavor(selectedFlavor) {
   flavor = selectedFlavor;
+  let colorClass = selectedFlavor;
   document.getElementById("game").innerHTML = `
-    <p>You chose <strong>${flavor}</strong> flavor!</p>
+    <p class="highlight ${colorClass}">You chose ${flavor} flavor!</p>
     <p>Now choose a topping:</p>
     <button onclick="chooseTopping('strawberry')">Strawberry</button>
     <button onclick="chooseTopping('chocolate')">Chocolate</button>
@@ -17,8 +18,9 @@ function chooseFlavor(selectedFlavor) {
 function chooseTopping(selectedTopping) {
   topping = selectedTopping;
   addedIngredients = [];
+  let colorClass = flavor;
   document.getElementById("game").innerHTML = `
-    <p>You chose a <strong>${flavor}</strong> cake with <strong>${topping}</strong> topping!</p>
+    <p class="highlight ${colorClass}">You chose a ${flavor} cake with ${topping} topping!</p>
     <p>Add ingredients:</p>
     <button onclick="addIngredient('flour')">Add Flour</button>
     <button onclick="addIngredient('eggs')">Add Eggs</button>
