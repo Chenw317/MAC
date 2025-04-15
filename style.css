@@ -66,10 +66,7 @@ button:hover {
 .chocolate { color: #864623; }
 .vanilla { color: #EBCFB2; }
 
-.highlight {
-  font-weight: bold;
-  margin: 10px 0;
-}
+
 
 @keyframes shake {
   0% { transform: rotate(0deg); }
