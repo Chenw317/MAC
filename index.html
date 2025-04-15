@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Making Game - Rock 3D + Titan One</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+3D&family=Titan+One&family=Shizuru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="ding-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_7dfe6a1e52.mp3"></audio>
+  <audio id="bg-music" src="https://cdn.pixabay.com/audio/2023/03/15/audio_39f01c909f.mp3" autoplay loop></audio>
+  <canvas class="confetti" id="confetti"></canvas>
+  
+  <div class="game-container">
+    <h1>Cake Making Game</h1>
+    <div id="game">
+      <p>Choose your cake flavor:</p>
+      <button onclick="chooseFlavor('vanilla')">Vanilla</button>
+      <button onclick="chooseFlavor('chocolate')">Chocolate</button>
+      <button onclick="chooseFlavor('matcha')">Matcha</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
